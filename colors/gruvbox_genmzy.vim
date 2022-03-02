@@ -93,7 +93,7 @@ call gruvbox_genmzy#highlight('Whitespace', s:palette.bg3, s:palette.none)
 call gruvbox_genmzy#highlight('SpecialKey', s:palette.bg3, s:palette.none)
 call gruvbox_genmzy#highlight('Pmenu', s:palette.fg, s:palette.bg2)
 call gruvbox_genmzy#highlight('PmenuSbar', s:palette.none, s:palette.bg2)
-call gruvbox_genmzy#highlight('PmenuSel', s:palette.bg0, s:palette.aqua)
+call gruvbox_genmzy#highlight('PmenuSel', s:palette.bg0, s:palette.blue, 'bold')
 highlight! link WildMenu PmenuSel
 call gruvbox_genmzy#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call gruvbox_genmzy#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
