@@ -94,7 +94,7 @@ function! gruvbox_genmzy#get_palette(background) "{{{
         \ 'bg_yellow':  ['#4a4940',   '136',  'DarkBlue'],
         \ }
   let palette2 = {
-        \ 'fg':         ['#f9f5d7',   '223',  'White'],
+        \ 'fg':         ['#ebdbb2',   '223',  'White'],
         \ 'red':        ['#fb4934',   '167',  'Red'],
         \ 'orange':     ['#fe8019',   '167',  'Red'],
         \ 'yellow':     ['#fabd2f',   '214',  'Yellow'],
@@ -105,6 +105,9 @@ function! gruvbox_genmzy#get_palette(background) "{{{
         \ 'grey0':      ['#7c6f64',   '243',  'DarkGrey'],
         \ 'grey1':      ['#928374',   '245',  'Grey'],
         \ 'grey2':      ['#928374',   '247',  'LightGrey'],
+        \ 'statusline1':['#b8bb26',   '142',  'Green'],
+        \ 'statusline2':['#f9f5d7',   '223',  'White'],
+        \ 'statusline3':['#fb4934',   '167',  'Red'],
         \ 'none':       ['NONE',      'NONE', 'NONE']
         \ } "}}}
   return extend(palette1, palette2)
