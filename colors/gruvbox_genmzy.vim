@@ -51,7 +51,7 @@ else
   endif
 endif
 call gruvbox_genmzy#highlight('IncSearch', s:palette.bg0, s:palette.red)
-call gruvbox_genmzy#highlight('Search', s:palette.bg0, s:palette.green)
+call gruvbox_genmzy#highlight('Search', s:palette.bg0, s:palette.yellow)
 call gruvbox_genmzy#highlight('ColorColumn', s:palette.none, s:palette.bg1)
 call gruvbox_genmzy#highlight('Conceal', s:palette.grey1, s:palette.none)
 if s:configuration.cursor ==# 'auto'
