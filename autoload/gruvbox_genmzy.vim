@@ -1,8 +1,8 @@
 " =============================================================================
-" URL: https://github.com/sainnhe/gruvbox_genmzy
+" URL: https://github.com/genmzy/gruvbox_genmzy
 " Filename: autoload/gruvbox_genmzy.vim
-" Author: sainnhe
-" Email: sainnhe@gmail.com
+" Author: genmzy
+" Email: genmzy@gmail.com
 " License: MIT License
 " =============================================================================
 

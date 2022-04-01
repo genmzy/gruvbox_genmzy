@@ -1,8 +1,8 @@
 " -----------------------------------------------------------------------------
 " Name:         gruvbox_genmzy
 " Description:  Comfortable & Pleasant Color Scheme for Vim
-" Author:       sainnhe <sainnhe@gmail.com>
-" Website:      https://github.com/sainnhe/gruvbox_genmzy
+" Author:       genmzy <genmzy@gmail.com>
+" Website:      https://github.com/genmzy/gruvbox_genmzy
 " License:      MIT
 " -----------------------------------------------------------------------------
 
