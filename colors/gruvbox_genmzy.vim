@@ -223,6 +223,7 @@ if s:configuration.enable_italic
   call gruvbox_genmzy#highlight('AquaItalic', s:palette.aqua, s:palette.none, 'italic')
   call gruvbox_genmzy#highlight('BlueItalic', s:palette.blue, s:palette.none, 'italic')
   call gruvbox_genmzy#highlight('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
+  call gruvbox_genmzy#highlight('GreyItalic', s:palette.grey1, s:palette.none, 'italic')
 else
   call gruvbox_genmzy#highlight('RedItalic', s:palette.red, s:palette.none)
   call gruvbox_genmzy#highlight('OrangeItalic', s:palette.orange, s:palette.none)
@@ -231,6 +232,7 @@ else
   call gruvbox_genmzy#highlight('AquaItalic', s:palette.aqua, s:palette.none)
   call gruvbox_genmzy#highlight('BlueItalic', s:palette.blue, s:palette.none)
   call gruvbox_genmzy#highlight('PurpleItalic', s:palette.purple, s:palette.none)
+  call gruvbox_genmzy#highlight('GreyItalic', s:palette.grey1, s:palette.none)
 endif
 if s:configuration.transparent_background || s:configuration.sign_column_background !=# 'default'
   call gruvbox_genmzy#highlight('RedSign', s:palette.red, s:palette.none)
