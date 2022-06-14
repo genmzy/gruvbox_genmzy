@@ -413,6 +413,11 @@ highlight! link CocWarningLine WarningLine
 highlight! link CocInfoLine InfoLine
 highlight! link CocHintLine HintLine
 highlight! link CocCodeLens Grey
+highlight! link CocPumSearch Aqua
+highlight! link CocMenuSel Visual
+highlight! link CocPumMenu Grey
+highlight! link CocPumShortcut Grey
+highlight! link CocPumVirtualText LineNr
 highlight! link HighlightedyankRegion Visual
 highlight! link CocGitAddedSign GreenSign
 highlight! link CocGitChangeRemovedSign PurpleSign
