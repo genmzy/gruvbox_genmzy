@@ -37,7 +37,7 @@ function! gruvbox_genmzy#get_palette(background) "{{{
         \ 'bg2':        ['#32302f',   '236',  'DarkGrey'],
         \ 'bg3':        ['#3c3836',   '238',  'DarkGrey'],
         \ 'bg4':        ['#504945',   '239',  'DarkGrey'],
-        \ 'bg_visual':  ['#32302f',   '52',   'DarkRed'],
+        \ 'bg_visual':  ['#57454A',   '52',   'DarkRed'],
         \ 'bg_red':     ['#4e3e43',   '52',   'DarkRed'],
         \ 'bg_green':   ['#404d44',   '22',   'DarkGreen'],
         \ 'bg_blue':    ['#394f5a',   '17',   'DarkBlue'],
