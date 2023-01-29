@@ -339,55 +339,119 @@ endif
 " Plugins: {{{
 
 " nvim-treesitter/nvim-treesitter {{{
-highlight! link TSAttribute Aqua
-highlight! link TSBoolean Purple
-highlight! link TSCharacter Green
-highlight! link TSCharacterSpecial Yellow
-highlight! link TSComment GreyItalic
-highlight! link TSConditional RedItalic
-highlight! link TSConstBuiltin Aqua
-highlight! link TSConstMacro Aqua
-highlight! link TSConstant Aqua
-highlight! link TSConstructor Aqua
-" use LSP diagnostic instead, ignore treesitter error
-highlight! link TSError NONE
-highlight! link TSException Red
-highlight! link TSField Green
-highlight! link TSFloat Purple
-highlight! link TSFuncBuiltin Aqua
-highlight! link TSFuncMacro Aqua
-highlight! link TSFunction Blue
-highlight! link TSInclude PurpleItalic
-highlight! link TSKeyword OrangeItalic
-highlight! link TSKeywordFunction RedItalic
-highlight! link TSKeywordReturn RedItalic
-highlight! link TSLabel Orange
-highlight! link TSMethod Blue
-highlight! link TSNamespace Aqua
-highlight! link TSNumber Purple
-highlight! link TSOperator Orange
-highlight! link TSParameter Purple
-highlight! link TSParameterReference Fg
-highlight! link TSProperty Green
-highlight! link TSPunctBracket Fg
-highlight! link TSPunctDelimiter Grey
-highlight! link TSPunctSpecial Fg
-highlight! link TSRepeat AquaItalic
-highlight! link TSString Green
-highlight! link TSStringSpecial Yellow
-highlight! link TSStringEscape Yellow
-highlight! link TSStringRegex Green
-highlight! link TSStructure Orange
-highlight! link TSTag Orange
-highlight! link TSTagDelimiter Green
-highlight! link TSText Green
-call everforest#highlight('TSEmphasis', s:palette.none, s:palette.none, 'bold')
-call everforest#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline')
-highlight! link TSType Yellow
-highlight! link TSTypeBuiltin Type
-highlight! link TSURI markdownUrl
-highlight! link TSVariable NONE
-highlight! link TSVariableBuiltin Aqua
+if has('nvim-0.8.0')
+  highlight! link @attribute Aqua
+  highlight! link @boolean Purple
+  highlight! link @character Green
+  highlight! link @character.special Yellow
+  highlight! link @comment GreyItalic
+  highlight! link @comment.doc.java Orange
+  highlight! link @conditional RedItalic
+  highlight! link @const.builtin Aqua
+  highlight! link @const.macro Aqua
+  highlight! link @constant Aqua
+  highlight! link @constant.macro Aqua
+  highlight! link @constant.builtin Aqua
+  highlight! link @constructor Aqua
+  " use LSP diagnostic instead, ignore treesitter error
+  highlight! link @error NONE
+  highlight! link @exception Red
+  highlight! link @field Green
+  highlight! link @float Purple
+  highlight! link @func.builtin Aqua
+  highlight! link @func.macro Aqua
+  highlight! link @function Blue
+  highlight! link @include PurpleItalic
+  highlight! link @keyword OrangeItalic
+  highlight! link @keyword.function RedItalic
+  highlight! link @keyword.return RedItalic
+  highlight! link @keyword.operator Operator
+  highlight! link @label Orange
+  highlight! link @method Blue
+  highlight! link @namespace Aqua
+  highlight! link @number Purple
+  highlight! link @operator Orange
+  highlight! link @parameter Purple
+  highlight! link @parameter.reference Fg
+  highlight! link @property Green
+  highlight! link @repeat AquaItalic
+  highlight! link @string Green
+  highlight! link @string.special Yellow
+  highlight! link @string.escape Yellow
+  highlight! link @string.regex Green
+  highlight! link @structure Orange
+  highlight! link @tag Orange
+  highlight! link @tag.delimiter Green
+  highlight! link @text Green
+  highlight! link @type Yellow
+  highlight! link @type.definition Yellow
+  highlight! link @type.builtin Type
+  highlight! link @uri markdownUrl
+  highlight! link @variable NONE
+  highlight! link @variable.builtin Aqua
+  highlight! link @punctuation Fg
+  highlight! link @punctuation.special Orange
+  highlight! link @punctuation.delimiter Grey
+  highlight! link @punctuation.bracket Fg
+  highlight! link @storgeclass Orange
+  highlight! link @define Aqua
+  highlight! link @debug Orange
+  call gruvbox_genmzy#highlight('@todo', s:palette.yellow, s:palette.none, 'bold')
+  call gruvbox_genmzy#highlight('@text.underline', s:palette.none, s:palette.none, 'underline')
+  call gruvbox_genmzy#highlight('@emphasis', s:palette.none, s:palette.none, 'bold')
+  call gruvbox_genmzy#highlight('@preproc', s:palette.aqua, s:palette.none, 'italic')
+  call gruvbox_genmzy#highlight('@underline', s:palette.none, s:palette.none, 'underline')
+else
+  highlight! link TSAttribute Aqua
+  highlight! link TSBoolean Purple
+  highlight! link TSCharacter Green
+  highlight! link TSCharacterSpecial Yellow
+  highlight! link TSComment GreyItalic
+  highlight! link TSConditional RedItalic
+  highlight! link TSConstBuiltin Aqua
+  highlight! link TSConstMacro Aqua
+  highlight! link TSConstant Aqua
+  highlight! link TSConstructor Aqua
+  " use LSP diagnostic instead, ignore treesitter error
+  highlight! link TSError NONE
+  highlight! link TSException Red
+  highlight! link TSField Green
+  highlight! link TSFloat Purple
+  highlight! link TSFuncBuiltin Aqua
+  highlight! link TSFuncMacro Aqua
+  highlight! link TSFunction Blue
+  highlight! link TSInclude PurpleItalic
+  highlight! link TSKeyword OrangeItalic
+  highlight! link TSKeywordFunction RedItalic
+  highlight! link TSKeywordReturn RedItalic
+  highlight! link TSLabel Orange
+  highlight! link TSMethod Blue
+  highlight! link TSNamespace Aqua
+  highlight! link TSNumber Purple
+  highlight! link TSOperator Orange
+  highlight! link TSParameter Purple
+  highlight! link TSParameterReference Fg
+  highlight! link TSProperty Green
+  highlight! link TSPunctBracket Fg
+  highlight! link TSPunctDelimiter Grey
+  highlight! link TSPunctSpecial Fg
+  highlight! link TSRepeat AquaItalic
+  highlight! link TSString Green
+  highlight! link TSStringSpecial Yellow
+  highlight! link TSStringEscape Yellow
+  highlight! link TSStringRegex Green
+  highlight! link TSStructure Orange
+  highlight! link TSTag Orange
+  highlight! link TSTagDelimiter Green
+  highlight! link TSText Green
+  call everforest#highlight('TSEmphasis', s:palette.none, s:palette.none, 'bold')
+  call everforest#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline')
+  highlight! link TSType Yellow
+  highlight! link TSTypeBuiltin Type
+  highlight! link TSURI markdownUrl
+  highlight! link TSVariable NONE
+  highlight! link TSVariableBuiltin Aqua
+endif
 " }}}
 " neoclide/coc.nvim {{{
 call gruvbox_genmzy#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')
