@@ -358,8 +358,8 @@ if has('nvim-0.8.0')
   highlight! link @exception Red
   highlight! link @field Green
   highlight! link @float Purple
-  highlight! link @func.builtin Aqua
-  highlight! link @func.macro Aqua
+  highlight! link @function.builtin Aqua
+  highlight! link @function.macro Aqua
   highlight! link @function Blue
   highlight! link @include PurpleItalic
   highlight! link @keyword OrangeItalic
